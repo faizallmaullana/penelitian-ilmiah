@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,top=4cm,bottom=3cm,left=4cm,right=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tocloft}
+\usepackage{indentfirst}
+
+% Font Times New Roman
+\usepackage{mathptmx}
+% \usepackage{fontspec}
+% \setmainfont{TeX Gyre Termes}
+
+% Spasi teks utama
+\onehalfspacing
+
+% Judul Bab
+\titleformat{\section}{\normalfont\bfseries\LARGE\MakeUppercase}{\thesection}{1em}{}
+% Judul Sub-bab
+\titleformat{\subsection}
+  {\normalfont\bfseries\large}
+  {\thesubsection}{1em}{}
+% Indentasi paragraf pertama
+\setlength{\parindent}{1.5em}
+% Rata kiri-kanan
+\renewcommand{\baselinestretch}{1.5}
+\setlength{\parskip}{0pt plus 1pt}
+
+
+\begin{document}
+
+% =================== JUDUL ===================
+\begin{center}
+    \textbf{\LARGE Judul Penelitian}
+\end{center}
+
+% =================== ABSTRAK ===================
+\begin{center}
+    \textbf{\large ABSTRAK}
+\end{center}
+\singlespacing
+\noindent
+\fontsize{12pt}{14pt}\selectfont
+\lipsum[1]
+
+\vspace{1cm}
+\onehalfspacing
+
+% =================== DAFTAR ISI ===================
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\singlespacing
+\tableofcontents
+\onehalfspacing
+\newpage
+
+% =================== BAB ===================
+\section{Pendahuluan}
+\lipsum[2-3]
+
+\subsection{Latar Belakang}
+\lipsum[4]
+
+% =================== GAMBAR ===================
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \caption{\textnormal{{Contoh Gambar: Proses Penelitian}}}
+\end{figure}
+
+% =================== TABEL ===================
+\begin{table}[H]
+    \centering
+    \caption{\textnormal{{Contoh Tabel: Data Responden}}}
+    \begin{tabular}{ll}
+        \toprule
+        Nama & Umur \\
+        \midrule
+        Ali & 23 \\
+        Budi & 25 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+% =================== DAFTAR PUSTAKA ===================
+\newpage
+\singlespacing
+\section*{Daftar Pustaka}
+\begin{itemize}
+    \item Doe, J. (2020). *Contoh Referensi*. Jakarta: Penerbit A.
+    \item Smith, A. (2021). *Another Book*. Yogyakarta: Penerbit B.
+\end{itemize}
+
+% =================== DAFTAR LAMPIRAN ===================
+\newpage
+\section*{Lampiran}
+\singlespacing
+\noindent Lampiran 1: Kuesioner Penelitian
+
+\end{document}

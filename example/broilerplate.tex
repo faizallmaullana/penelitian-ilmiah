@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,top=4cm,bottom=3cm,left=4cm,right=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tocloft}
+\usepackage{indentfirst}
+
+\onehalfspacing
+\setlength{\parskip}{0pt plus 1pt}
+
+% Section style: Bold, Uppercase, centered, 14pt font
+\titleformat{\section}[block]
+  {\normalfont\bfseries\centering\fontsize{14}{16}\selectfont}  % 14px bold and centered
+  {\thesection}{1em}{}
+
+% Subsection style: Bold, 12pt font
+\titleformat{\subsection}[block]
+  {\normalfont\bfseries\fontsize{12}{14}\selectfont}  % 12px bold
+  {\thesubsection}{1em}{}
+
+% Set paragraph indent to 0
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0pt plus 1pt}
+
+% Remove section numbering in TOC
+\setcounter{secnumdepth}{0}
+
+\setlength{\parindent}{0pt}        % Tidak ada indentasi paragraf
+\setlength{\parskip}{6pt}          % Jarak antar paragraf 6pt
+\onehalfspacing                    % Spasi 1.5 untuk isi dokumen
+
+% =============================================
+
+\begin{document}
+
+\thispagestyle{empty}
+\pagenumbering{roman}
+\include{cover/cover}
+\include{pernyataanoriginalitas/originalitas}
+\pagestyle{plain}
+
+% Set line spacing to single for Table of Contents
+\singlespacing
+\tableofcontents
+\newpage
+
+% Reset line spacing to 1.5 for the rest of the document
+\onehalfspacing
+
+\pagenumbering{arabic}
+\setlength{\parindent}{1.5em}
+
+\section{Pendahuluan}
+\subsection{Latar Belakang}
+{\bfseries \fontsize{12}{14}\selectfont This is an example of content with 12px font size in bold.}
+\lipsum[1]
+
+\subsection{Tujuan Penelitian}
+{\bfseries \fontsize{12}{14}\selectfont Another example of content with 12px font size in bold.}
+\lipsum[2]
+
+\end{document}

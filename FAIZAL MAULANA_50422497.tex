@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,top=4cm,bottom=3cm,left=4cm,right=3cm]{geometry}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{lipsum}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{tocloft}
+\usepackage{indentfirst}
+
+\onehalfspacing
+\setlength{\parskip}{0pt plus 1pt}
+
+% Section style: Bold, Uppercase, centered, 14pt font
+\titleformat{\section}[block]
+  {\normalfont\bfseries\centering\fontsize{14}{16}\selectfont}  % 14px bold and centered
+  {\thesection}{1em}{}
+
+% Subsection style: Bold, 12pt font
+\titleformat{\subsection}[block]
+  {\normalfont\bfseries\fontsize{12}{14}\selectfont}  % 12px bold
+  {\thesubsection}{1em}{}
+
+% Set paragraph indent to 0
+\setlength{\parindent}{0em}
+\setlength{\parskip}{0pt plus 1pt}
+
+% Remove section numbering in TOC
+\setcounter{secnumdepth}{0}
+
+\setlength{\parindent}{0pt}        
+\setlength{\parskip}{6pt}         
+\onehalfspacing                   
+
+% =============================================
+
+\begin{document}
+
+\thispagestyle{empty}
+\pagenumbering{roman}
+\include{pengantar/cover}
+\include{pengantar/originalitas}
+\include{pengantar/lembarpengesahan}
+\include{pengantar/abstrak}
+\include{pengantar/katapengantar}
+\pagestyle{plain}
+
+% ------- DAFTAR ISI -------
+\singlespacing
+\tableofcontents
+
+% ------- DAFTAR TABEL -------
+\newpage
+\section*{DAFTAR TABEL}
+\addcontentsline{toc}{section}{DAFTAR TABEL}
+\listoftables
+
+% ------- DAFTAR GAMBAR -------
+\newpage
+\section*{DAFTAR GAMBAR}
+\addcontentsline{toc}{section}{DAFTAR GAMBAR}
+\listoffigures
+
+% Mulai isi utama
+\newpage
+\onehalfspacing
+\pagenumbering{arabic}
+\setlength{\parindent}{1.5em}
+
+\include{bab1/bab1}
+\include{bab2/bab2}
+\include{bab3/bab3}
+\include{bab4/bab4}
+
+\end{document}
