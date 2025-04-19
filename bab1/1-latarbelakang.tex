@@ -1,0 +1,14 @@
+
+\subsection{Latar Belakang}
+\sloppy
+
+Dalam era modern, banyak aplikasi dikembangkan dalam arsitektur \textit{microservices} dan dijalankan di atas Kubernetes. 
+Namun, penggunaan Kubernetes \textit{full version} kadang \textit{overkill} dan r\textit{esource-intensive}, terutama untuk aplikasi skala 
+kecil atau lingkungan simulasi. Di sisi lain, K3s hadir sebagai versi ringan dari Kubernetes, ideal untuk 
+skenario tersebut. Menggabungkannya dengan Terraform memungkinkan \textit{provisioning} yang otomatis, \textit{repeatable}, dan efisien.
+
+\cite{CNCF} mencatat bahwa pada tahun 2021, sekitar 61\% backend developer di seluruh belahan bumi menggunakan Kubernetes, atau sekitar 5.6 juta developer secara global. Penggunaan Kubernetes meningkat sebesar 67\% dibandingkan tahun sebelumnya, menandakan adopsi yang sangat cepat di kalangan developer backend. Hal ini tidak hanya mencerminkan popularitas Kubernetes dalam industri, tetapi juga membuka peluang karier yang lebih luas bagi para penggunanya.
+
+Namun demikian, meskipun Kubernetes menawarkan skalabilitas dan fleksibilitas yang tinggi, penggunaannya juga memerlukan sumber daya komputasi yang relatif besar. Oleh karena itu, untuk aplikasi skala kecil, lingkungan pengembangan lokal, atau startup yang belum memperoleh profit signifikan, solusi seperti \textit{K3s}—versi ringan dari Kubernetes yang dikembangkan oleh Rancher Labs—dapat menjadi alternatif yang lebih efisien dan hemat sumber daya \cite{K3s}.
+
+Untuk meningkatkan efisiensi dalam proses penyebaran infrastruktur Kubernetes maupun K3s, penggunaan alat otomasi seperti \textit{Terraform} menjadi sangat relevan. Terraform, yang dikembangkan oleh HashiCorp, memungkinkan provisioning infrastruktur secara deklaratif dan \textit{infrastructure as code} (IaC), sehingga pengaturan lingkungan dapat dilakukan secara konsisten, repeatable, dan mudah diatur ulang, \cite{Terraform}. Kombinasi antara K3s dan Terraform menjadi solusi yang ideal untuk organisasi yang ingin mengadopsi orkestrasi container tanpa membebani resource sistem secara berlebihan, sekaligus menjaga otomasi dan dokumentasi infrastruktur dengan baik.

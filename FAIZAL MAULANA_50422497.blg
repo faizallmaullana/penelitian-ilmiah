@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: FAIZAL MAULANA_50422497.aux
+A level-1 auxiliary file: pengantar/cover.aux
+A level-1 auxiliary file: bab1/bab1.aux
+The style file: agsm.bst
+Database file #1: refs.bib
+You've used 4 entries,
+            2909 wiz_defined-function locations,
+            662 strings with 5252 characters,
+and the built_in function-call counts, 7512 in all, are:
+= -- 1146
+> -- 96
+< -- 0
++ -- 491
+- -- 28
+* -- 558
+:= -- 1688
+add.period$ -- 8
+call.type$ -- 4
+change.case$ -- 56
+chr.to.int$ -- 3
+cite$ -- 4
+duplicate$ -- 44
+empty$ -- 105
+format.name$ -- 36
+if$ -- 1313
+int.to.chr$ -- 6
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 23
+num.names$ -- 40
+pop$ -- 34
+preamble$ -- 1
+purify$ -- 60
+quote$ -- 0
+skip$ -- 38
+stack$ -- 0
+substring$ -- 1510
+swap$ -- 6
+text.length$ -- 56
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 16
+warning$ -- 0
+while$ -- 84
+width$ -- 0
+write$ -- 58

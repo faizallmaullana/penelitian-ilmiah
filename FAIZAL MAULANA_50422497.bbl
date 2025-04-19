@@ -1,0 +1,23 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{CNCF}{2021{\em a}}{CNCF_Survey}
+CNCF  \harvardyearleft 2021{\em a}\harvardyearright , `Cncf survey 2021'.
+\newblock Accessed: 2025-04-19.
+\newline\harvardurl{https://www.cncf.io}
+
+\harvarditem{CNCF}{2021{\em b}}{CNCF}
+CNCF  \harvardyearleft 2021{\em b}\harvardyearright , `New slashdata report: 5.6 million developers use kubernetes, an increase of 67% over one year'.
+\newblock Accessed: 2025-04-19.
+\newline\harvardurl{https://www.cncf.io/blog/2021/12/20/new-slashdata-report-5-6-million-developers-use-kubernetes-an-increase-of-67-over-one-year/}
+
+\harvarditem{{HashiCorp}}{2024}{Terraform}
+{HashiCorp}  \harvardyearleft 2024\harvardyearright , `Terraform by hashicorp'.
+\newblock Accessed: 2025-04-19.
+\newline\harvardurl{https://www.terraform.io}
+
+\harvarditem{{Rancher Labs}}{2023}{K3s}
+{Rancher Labs}  \harvardyearleft 2023\harvardyearright , `Lightweight kubernetes - k3s'.
+\newblock Accessed: 2025-04-19.
+\newline\harvardurl{https://k3s.io}
+
+\end{thebibliography}

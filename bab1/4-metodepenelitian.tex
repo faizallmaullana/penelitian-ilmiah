@@ -1,0 +1,40 @@
+\subsection{Metode Penelitian}
+
+Metode penelitian ini dilakukan dengan pendekatan eksperimen dan studi literatur. Penelitian ini terdiri dari beberapa tahapan, mulai dari studi literatur mengenai Kubernetes, K3s, dan Terraform, hingga implementasi dan evaluasi penggunaan K3s serta otomatisasi infrastruktur menggunakan Terraform. Berikut adalah langkah-langkah yang akan dilakukan dalam penelitian ini:
+
+\subsubsection{Studi Literatur}
+Studi literatur dilakukan untuk memahami konsep dasar Kubernetes, K3s, dan Terraform, serta penerapan mereka dalam arsitektur \textit{microservices}. Literatur yang digunakan mencakup buku, artikel ilmiah, dokumentasi resmi, dan laporan-laporan yang relevan. Penelitian ini juga akan merujuk pada survei penggunaan Kubernetes di kalangan pengembang backend, serta laporan-laporan yang menggambarkan perkembangan penggunaan K3s dan Terraform dalam industri perangkat lunak.
+
+\subsubsection{Eksperimen dan Implementasi}
+Eksperimen ini akan dilakukan dengan implementasi lingkungan yang menggunakan Kubernetes full version dan K3s untuk mengelola aplikasi berbasis \textit{microservices}. Langkah-langkah eksperimen ini adalah sebagai berikut:
+\begin{enumerate}
+    \renewcommand{\labelenumi}{\arabic{enumi})}  
+    \item Menyiapkan lingkungan pengujan dengan dua konfigurasi berbeda, yaitu Kubernetes full version dan K3s. Setiap konfigurasi akan digunakan untuk menjalankan aplikasi berbasis \textit{microservices}.
+    
+    \item Aplikasi berbasis \textit{microservices} yang sederhana akan diterapkan pada kedua lingkungan tersebut. Aplikasi ini akan terdiri dari beberapa layanan yang saling terhubung, seperti layanan pengguna, layanan database, dan layanan autentikasi.
+    
+    \item Terraform akan digunakan untuk mengelola dan mengotomatiskan provisioning infrastruktur pada kedua konfigurasi tersebut. Infrastruktur yang dikelola akan mencakup penyebaran cluster Kubernetes atau K3s serta pengaturan sumber daya yang diperlukan.
+    
+    \item Pengujian akan dilakukan untuk mengukur efisiensi dan performa kedua konfigurasi. Metrik yang diukur meliputi penggunaan CPU, memori, waktu penyebaran, dan skalabilitas aplikasi. Selain itu, pengujian juga akan dilakukan untuk mengukur kemudahan penggunaan Terraform dalam mengelola infrastruktur.
+\end{enumerate}
+
+\subsubsection{Analisis Data}
+Data yang diperoleh dari eksperimen akan dianalisis untuk mengidentifikasi kelebihan dan kekurangan masing-masing konfigurasi, baik Kubernetes full version maupun K3s. Perbandingan dilakukan berdasarkan beberapa faktor seperti:
+\begin{enumerate}
+    \renewcommand{\labelenumi}{\arabic{enumi})}  
+    \item Penggunaan sumber daya (CPU, memori).
+    \item Waktu penyebaran dan skalabilitas aplikasi.
+    \item Kemudahan dalam mengelola dan mengonfigurasi infrastruktur dengan Terraform.
+    \item Keuntungan dan kerugian yang diperoleh dalam konteks aplikasi skala kecil.
+\end{enumerate}
+
+\subsubsection{Alat dan Teknologi yang Digunakan}
+\begin{enumerate}
+    \renewcommand{\labelenumi}{\arabic{enumi})}  
+    \item \textbf{Kubernetes}: Digunakan untuk implementasi pengelolaan aplikasi berbasis \textit{microservices}.
+    \item \textbf{K3s}: Digunakan sebagai alternatif ringan untuk Kubernetes pada aplikasi skala kecil.
+    \item \textbf{Terraform}: Digunakan untuk mengotomatisasi provisioning dan manajemen infrastruktur.
+    \item \textbf{Docker}: Digunakan untuk containerisasi aplikasi.
+    \item \textbf{Prometheus dan Grafana}: Digunakan untuk memonitor performa aplikasi dan infrastruktur.
+    \item \textbf{Apache Benchmark}: Digunakan untuk melakukan load test untuk melihat respon dan perbandingan penggunaan penggunaan sumber data antara Kubernetes dengan K3s.
+\end{enumerate}

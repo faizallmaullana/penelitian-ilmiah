@@ -1,0 +1,55 @@
+\subsection{Batasan Masalah}
+
+Berdasarkan latar belakang yang telah dijelaskan, penelitian ini memiliki beberapa batasan masalah sebagai berikut:
+
+\begin{enumerate}
+    \item Penelitian ini terbatas pada aplikasi skala kecil dan lingkungan pengembangan hybrid menggunakan platform Amazon Web Service (AWS) dan perangkat lokal yang menggunakan Kubernetes atau K3s untuk orkestrasi container. Fokus penelitian ini tidak mencakup aplikasi skala besar atau implementasi Kubernetes full version yang lebih kompleks dan resource-intensive.
+    
+    \item Penelitian ini hanya berfokus pada penggunaan K3s sebagai solusi ringan dan efisien untuk orkestrasi container, tanpa membahas implementasi Kubernetes full version atau platform orkestrasi lainnya, \cite{K3s}.
+    
+    \item Studi ini terbatas pada penggunaan Terraform untuk otomatisasi penyediaan infrastruktur yang berkaitan dengan Kubernetes dan K3s. Tidak mencakup alat otomasi infrastruktur lain atau teknik provisioning manual, \cite{Terraform}.
+    
+    \item Penelitian ini membatasi konteks penggunaannya pada aplikasi yang dijalankan di lingkungan simulasi dan startup yang belum memperoleh profit signifikan, bukan pada perusahaan besar atau lingkungan produksi yang membutuhkan skalabilitas tinggi, \cite{CNCF_Survey}.
+    
+    \item Fokus penelitian ini adalah pada konsep "Infrastructure as Code" (IaC) menggunakan Terraform untuk otomatisasi provisioning, tanpa mencakup topik lain terkait pengelolaan infrastruktur secara manual atau penggunaan sistem manajemen konfigurasi lainnya.
+\end{enumerate}
+
+% \begin{enumerate}
+%   \renewcommand{\labelenumi}{\arabic{enumi})}  
+%   \item Penelitian ini hanya akan membahas implementasi CI/CD menggunakan tiga 
+%         alat utama, yaitu:
+%   \begin{enumerate}
+%       \renewcommand{\labelenumii}{(\alph{enumii})} 
+%       \item GitHub Actions untuk otomasi alur pengembangan perangkat lunak, 
+%             termasuk pengujian, build, dan deployment.
+%       \item Terraform untuk manajemen infrastruktur cloud melalui kode.
+%       \item K3s untuk orkestrasi kontainer dalam lingkungan cloud-native.
+%   \end{enumerate}
+%   \item Penelitian ini akan lebih berfokus pada penerapan CI/CD dalam siklus 
+%         pengembangan perangkat lunak (software development lifecycle) dan 
+%         bagaimana alat-alat tersebut meningkatkan kecepatan, keamanan, dan 
+%         kualitas pengembangan. Penelitian tidak mencakup analisis sistem 
+%         informasi yang lebih mendalam, seperti analisis data dan pemrosesan 
+%         transaksi secara spesifik.
+%   \item Penelitian ini berfokus pada implementasi dan evaluasi alat-alat CI/CD 
+%         di dalam lingkungan cloud platform AWS.
+%   \item Penelitian ini menggunakan kode 
+%         sumber dan aplikasi sistem informasi manajemen Bocah Angon Properti yang 
+%         sudah ada, dan tidak akan mencakup pembuatan sistem manajemen properti 
+%         dari awal. Fokus utama adalah pada bagaimana CI/CD dapat diimplementasikan
+%   \item Penelitian ini tidak akan mengevaluasi kinerja keseluruhan sistem 
+%         informasi manajemen dalam hal performa pengelolaan data atau 
+%         fungsionalitas aplikasi. Fokus utama adalah pada peningkatan proses 
+%         pengembangan dan deployment perangkat lunak melalui penerapan CI/CD 
+%         menggunakan GitHub Actions, Terraform, dan K3s.
+%   \item Penelitian ini tidak akan membahas secara mendalam aspek keamanan dan 
+%         kepatuhan yang lebih spesifik terhadap regulasi tertentu, seperti GDPR 
+%         atau ISO/IEC 27001, meskipun alat-alat CI/CD yang digunakan diharapkan 
+%         dapat mendukung pengelolaan keamanan secara otomatis, seperti pengujian 
+%         otomatis untuk celah keamanan dan audit log.
+%   \item Dengan batasan-batasan ini, penelitian bertujuan untuk memberikan 
+%         pemahaman yang lebih mendalam tentang implementasi CI/CD dengan GitHub 
+%         Actions, Terraform, dan K3s, serta dampaknya terhadap efisiensi dan 
+%         efektivitas pengembangan perangkat lunak di lingkungan cloud-native, 
+%         khususnya dalam pengelolaan sistem informasi manajemen properti.
+% \end{enumerate}

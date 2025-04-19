@@ -1,103 +1,59 @@
-\documentclass[12pt]{article}
-\usepackage[a4paper,top=4cm,bottom=3cm,left=4cm,right=3cm]{geometry}
-\usepackage{setspace}
-\usepackage{titlesec}
-\usepackage{lipsum}
-\usepackage{caption}
-\usepackage{graphicx}
-\usepackage{booktabs}
-\usepackage{float}
-\usepackage{tocloft}
-\usepackage{indentfirst}
+\documentclass[a4paper, 12pt]{article}
+\usepackage{graphicx} % for including graphics
+\usepackage{caption}  % for customizing figure captions
 
-% Font Times New Roman
-\usepackage{mathptmx}
-% \usepackage{fontspec}
-% \setmainfont{TeX Gyre Termes}
+\makeatletter
+\@addtoreset{figure}{section} % Reset figure numbering at the start of each section
+\renewcommand{\thefigure}{\thesection.\arabic{figure}} % Format figure numbers as "1.1", "1.2", etc.
+\makeatother
 
-% Spasi teks utama
-\onehalfspacing
-
-% Judul Bab
-\titleformat{\section}{\normalfont\bfseries\LARGE\MakeUppercase}{\thesection}{1em}{}
-% Judul Sub-bab
-\titleformat{\subsection}
-  {\normalfont\bfseries\large}
-  {\thesubsection}{1em}{}
-% Indentasi paragraf pertama
-\setlength{\parindent}{1.5em}
-% Rata kiri-kanan
-\renewcommand{\baselinestretch}{1.5}
-\setlength{\parskip}{0pt plus 1pt}
-
+\renewcommand{\figurename}{Gambar} % Change "Figure" to "Gambar"
 
 \begin{document}
 
-% =================== JUDUL ===================
-\begin{center}
-    \textbf{\LARGE Judul Penelitian}
-\end{center}
+\section*{DAFTAR GAMBAR}
+\vspace{1em}
+\renewcommand{\listfigurename}{List of Gambar} % Change "List of Figures" to "List of Gambar"
+\listoffigures % Generates the list of figures
 
-% =================== ABSTRAK ===================
-\begin{center}
-    \textbf{\large ABSTRAK}
-\end{center}
-\singlespacing
-\noindent
-\fontsize{12pt}{14pt}\selectfont
-\lipsum[1]
+\section{Introduction}
 
-\vspace{1cm}
-\onehalfspacing
+In this section, we include the following figures:
 
-% =================== DAFTAR ISI ===================
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\singlespacing
-\tableofcontents
-\onehalfspacing
-\newpage
-
-% =================== BAB ===================
-\section{Pendahuluan}
-\lipsum[2-3]
-
-\subsection{Latar Belakang}
-\lipsum[4]
-
-% =================== GAMBAR ===================
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{example-image}
-    \caption{\textnormal{{Contoh Gambar: Proses Penelitian}}}
+% Gambar 1.1
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{figure1.jpeg}
+\caption{Ini adalah Gambar 1.1.}
+\label{fig:figure1}
 \end{figure}
 
-% =================== TABEL ===================
-\begin{table}[H]
-    \centering
-    \caption{\textnormal{{Contoh Tabel: Data Responden}}}
-    \begin{tabular}{ll}
-        \toprule
-        Nama & Umur \\
-        \midrule
-        Ali & 23 \\
-        Budi & 25 \\
-        \bottomrule
-    \end{tabular}
-\end{table}
+% Gambar 1.2
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{figure1.jpeg}
+\caption{Ini adalah Gambar 1.2.}
+\label{fig:figure2}
+\end{figure}
 
-% =================== DAFTAR PUSTAKA ===================
-\newpage
-\singlespacing
-\section*{Daftar Pustaka}
-\begin{itemize}
-    \item Doe, J. (2020). *Contoh Referensi*. Jakarta: Penerbit A.
-    \item Smith, A. (2021). *Another Book*. Yogyakarta: Penerbit B.
-\end{itemize}
+\section{Another Section}
 
-% =================== DAFTAR LAMPIRAN ===================
-\newpage
-\section*{Lampiran}
-\singlespacing
-\noindent Lampiran 1: Kuesioner Penelitian
+In this section, we will have more figures:
+
+% Gambar 2.1
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{figure1.jpeg}
+\caption{Ini adalah Gambar 2.1.}
+\label{fig:figure3}
+\end{figure}
+
+% Gambar 2.2
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{figure1.jpeg}
+\caption{Ini adalah Gambar 2.2.}
+\label{fig:figure4}
+\end{figure}
 
 \end{document}
